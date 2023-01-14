@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>Zul - Web development, problem-solving and having fun! 🔥</title>
+    <meta name="title" content="Zul - Web development, problem-solving and having fun! 🔥">
+    <meta name="description" content="Zul is a web developer and problem solver. He loves to solve problems and create things. 🔥">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zulkiflizin.com/">
+    <meta property="og:title" content="Zul - Web development, problem-solving and having fun! 🔥">
+    <meta property="og:description" content="Zul is a web developer and problem solver. He loves to solve problems and create things. 🔥">
+    <meta property="og:image" content="https://zulkiflizin.com/public/images/zulkiflizin_metatag.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://zulkiflizin.com/">
+    <meta property="twitter:title" content="Zul - Web development, problem-solving and having fun! 🔥">
+    <meta property="twitter:description" content="Zul is a web developer and problem solver. He loves to solve problems and create things. 🔥">
+    <meta property="twitter:image" content="https://zulkiflizin.com/public/images/zulkiflizin_metatag.png">
+
+    <link rel="icon" type="image/png" href="./public/images/zulkiflizin.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css">
+
+    <style>
+        .bg-spring-wood {
+            background: rgb(254,241,206);
+            background: -moz-linear-gradient(180deg, rgba(254,241,206,1) 0%, rgba(252,221,138,1) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(254,241,206,1) 0%, rgba(252,221,138,1) 100%);
+            background: linear-gradient(180deg, rgba(254,241,206,1) 0%, rgba(252,221,138,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef1ce",endColorstr="#fcdd8a",GradientType=1);
+        }
+
+        .max-width-600 {
+            max-width: 600px;
+        }
+
+        .bg-corn-50 {
+            background-color: #e1a50480 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="bg-spring-wood vh-100">
+        <div class="container h-100">
+            <div class="d-flex flex-column justify-content-center align-items-center text-center h-100">
+                <img src="./public/images/cactus.png" class="img-fluid" width="200">
+                <p class="fw-bold fs-1">Hey there!</p>
+                <p class="lead fs-5 mb-5 max-width-600">
+                    Hang tight! My portfolio is under construction. <br class="d-none d-md-block">
+                    In the meantime, please check out my <a href="https://zulkiflizin.super.site/" target="_blank" class="link-primary">backup portfolio</a>
+                    or do visit my social pages below for more information about me.
+                </p>
+
+                <div class="d-flex bg-corn-50 rounded-pill shadow-sm p-3">
+                    <a href="https://twitter.com/consistentcat" target="_blank" class="js-btn-social mx-3" data-bs-toggle="tooltip" title="Twitter">🐦</a>
+                    <a href="https://www.linkedin.com/in/zulkiflizin/" target="_blank" class="js-btn-social mx-3" data-bs-toggle="tooltip" title="LinkedIn">💼</a>
+                    <a href="mailto:zulkiflizin.work@gmail.com" target="_blank" class="js-btn-social mx-3" data-bs-toggle="tooltip" title="Email">📧</a>
+                    <a href="https://github.com/adamity" target="_blank" class="js-btn-social mx-3" data-bs-toggle="tooltip" title="GitHub">🐙</a>
+                    <a href="https://gitlab.com/adamity" target="_blank" class="js-btn-social mx-3" data-bs-toggle="tooltip" title="GitLab">🐱</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.js"></script>
+    <script>
+        let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        const btnSocial = document.querySelectorAll('.js-btn-social');
+        btnSocial.forEach(btn => {
+            btn.addEventListener('mouseenter', () => {
+                btn.style.transform = 'scale(1.2)';
+            });
+            btn.addEventListener('mouseleave', () => {
+                btn.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+
+</html>
