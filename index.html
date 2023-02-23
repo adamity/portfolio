@@ -33,48 +33,217 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css">
 
     <style>
-        .bg-albescent-white {
-            background-color: #F4DFCA !important;
+        .img-logo {
+            width: 184px !important;
+            height: 184px !important;
         }
 
-        .max-width-600 {
-            max-width: 600px;
+        .text-unset {
+            text-transform: unset !important;
         }
 
-        .bg-pharlap {
-            background-color: #A07B7A !important;
+        /* Height 100px and Prevent from image wrapping */
+        .img-work {
+            height: 150px !important;
+            width: 100% !important;
+            object-fit: cover;
+        }
+
+        /* Mobile */
+        @media (max-width: 991px) {
+            .img-logo {
+                width: 120px !important;
+                height: 120px !important;
+            }
+        }
+
+        /* Large */
+        @media (min-width: 992px) {
+            .fixed-lg-top {
+                position: fixed;
+                right: 0;
+                left: 0;
+                z-index: 1030;
+                top: 0;
+            }
         }
     </style>
 </head>
 
 <body>
-    <main class="bg-albescent-white vh-100">
-        <div class="container h-100">
-            <div class="d-flex flex-column justify-content-center align-items-center text-center h-100">
-                <img src="./public/images/cactus.png" class="img-fluid" width="200">
-                <p class="fw-bold fs-1">Hey there!</p>
-                <p class="lead fs-5 mb-5 max-width-600">
-                    Hang tight! My portfolio is under construction. <br class="d-none d-md-block">
-                    In the meantime, please check out my <a href="https://zulkiflizin.super.site/" target="_blank" class="link-primary">backup portfolio</a>
-                    or do visit my social pages below for more information about me.
-                </p>
+    <main class="bg-white">
+        <div class="container py-lg-5 vh-100">
+            <div class="row h-100">
+                <div class="col-12 col-lg-4 fixed-lg-top p-4 p-lg-5 ms-lg-4">
+                    <img src="./public/images/zulkiflizin_profile.png" class="img-fluid img-logo border rounded-circle mb-5" alt="profile picture">
 
-                <div class="d-flex bg-pharlap rounded-pill shadow-sm p-1">
-                    <a href="https://twitter.com/consistentcat" target="_blank" class="js-btn-social mx-3 link-light fs-5" data-bs-toggle="tooltip" title="Twitter">
-                        <i class="bi bi-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/zulkiflizin/" target="_blank" class="js-btn-social mx-3 link-light fs-5" data-bs-toggle="tooltip" title="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="mailto:zulkiflizin.work@gmail.com" target="_blank" class="js-btn-social mx-3 link-light fs-5" data-bs-toggle="tooltip" title="Email">
-                        <i class="bi bi-envelope-fill"></i>
-                    </a>
-                    <a href="https://github.com/adamity" target="_blank" class="js-btn-social mx-3 link-light fs-5" data-bs-toggle="tooltip" title="GitHub">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a href="https://gitlab.com/adamity" target="_blank" class="js-btn-social mx-3 link-light fs-5" data-bs-toggle="tooltip" title="GitLab">
-                        <i class="bi bi-gem"></i>
-                    </a>
+                    <p class="fw-bold fs-1 text-black mb-3">Zulkifli Zin 👨‍💻</p>
+                    <p class="lead fs-5 mb-5">
+                        Experienced web developer with 3+ years of experience, passionate about creating beautiful, functional websites.
+                    </p>
+
+                    <div class="d-flex justify-content-center justify-content-lg-start py-5">
+                        <a href="https://twitter.com/consistentcat" target="_blank" class="js-btn-social link-dark fs-5" data-bs-toggle="tooltip" title="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <p class="m-0 text-dark mx-3">|</p>
+                        <a href="https://www.linkedin.com/in/zulkiflizin/" target="_blank" class="js-btn-social link-dark fs-5" data-bs-toggle="tooltip" title="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <p class="m-0 text-dark mx-3">|</p>
+                        <a href="mailto:zulkiflizin.work@gmail.com" target="_blank" class="js-btn-social link-dark fs-5" data-bs-toggle="tooltip" title="Email">
+                            <i class="bi bi-envelope-fill"></i>
+                        </a>
+                        <p class="m-0 text-dark mx-3">|</p>
+                        <a href="https://github.com/adamity" target="_blank" class="js-btn-social link-dark fs-5" data-bs-toggle="tooltip" title="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <p class="m-0 text-dark mx-3">|</p>
+                        <a href="https://gitlab.com/adamity" target="_blank" class="js-btn-social link-dark fs-5" data-bs-toggle="tooltip" title="GitLab">
+                            <i class="bi bi-gem"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-8 offset-lg-4 px-4 px-lg-5 h-100">
+                    <section class="mb-5">
+                        <p class="fw-semibold fs-5 text-black">My Skillset ⚔️</p>
+                        <div class="d-flex flex-wrap">
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">PHP</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Laravel</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Codeigniter</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">JavaScript</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">jQuery</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">AJAX</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">VueJS</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">HTML</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">CSS</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Bootstrap</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">MySQL</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Git Version Control</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Linux Server</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">API Integration</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">JSON</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">NGINX Web Server</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Web Hosting</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Google Analytics</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Google Cloud Platform</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Chrome Extensions</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Telegram Bots</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">GPT-3</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Java</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">C++</p>
+                            <p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2">Python</p>
+                        </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <p class="fw-semibold fs-5 text-black">Snippets of My Work 🎨</p>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-4">
+                                <a href="https://nomoresurf.com/" target="_blank" class="btn btn-light border rounded-9 shadow w-100 text-unset">
+                                    <img src="https://zulkiflizin.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fa7d042fb-9934-44dc-8f0e-65ba51618f8d%2Fimages%2Feeb06493-68e2-4b7e-8b1b-0ee9320114b2.png&w=1920&q=80"
+                                    class="img-fluid img-work border rounded-9" alt="nomoresurf">
+
+                                    <div class="my-3">
+                                        <p class="fs-6 m-0">Nomoresurf</p>
+                                        <p class="fs-6 lead m-0">Productivity Website Blocker</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-4">
+                                <a href="https://skillsorder.com/" target="_blank" class="btn btn-light border rounded-9 shadow w-100 text-unset">
+                                    <img src="https://zulkiflizin.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fa7d042fb-9934-44dc-8f0e-65ba51618f8d%2Fimages%2F46a11920-e160-4a87-992d-c9a159a02ccb.png&w=1920&q=80"
+                                    class="img-fluid img-work border rounded-9" alt="skillsorder">
+
+                                    <div class="my-3">
+                                        <p class="fs-6 m-0">Skillsorder</p>
+                                        <p class="fs-6 lead m-0">Skills Based Recruitment Platform</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-4">
+                                <a href="https://t.me/AtmayaBot" target="_blank" class="btn btn-light border rounded-9 shadow w-100 text-unset">
+                                    <img src="https://zulkiflizin.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fa7d042fb-9934-44dc-8f0e-65ba51618f8d%2Fimages%2F7cc8dfd4-4069-4b5d-b0f8-48980242ab58.png&w=1920&q=80"
+                                    class="img-fluid img-work border rounded-9" alt="atmaya">
+
+                                    <div class="my-3">
+                                        <p class="fs-6 m-0">Atmaya</p>
+                                        <p class="fs-6 lead m-0">GPT-3 Powered Telegram Chatbot</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-4">
+                                <a href="https://tinyus.zulkiflizin.com/" target="_blank" class="btn btn-light border rounded-9 shadow w-100 text-unset">
+                                    <img src="https://zulkiflizin.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fa7d042fb-9934-44dc-8f0e-65ba51618f8d%2Fimages%2F133d17ce-3692-409d-b9df-c40b04efd051.png&w=1920&q=80"
+                                    class="img-fluid img-work border rounded-9" alt="tinyus">
+
+                                    <div class="my-3">
+                                        <p class="fs-6 m-0">Tinyus</p>
+                                        <p class="fs-6 lead m-0">URL Shortener Service App</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-4">
+                                <a href="https://feedat.zulkiflizin.com/" target="_blank" class="btn btn-light border rounded-9 shadow w-100 text-unset">
+                                    <img src="https://zulkiflizin.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fa7d042fb-9934-44dc-8f0e-65ba51618f8d%2Fimages%2Fa2cad4c1-8373-4651-b052-991a8712e88b.png&w=1920&q=80"
+                                    class="img-fluid img-work border rounded-9" alt="feedat">
+
+                                    <div class="my-3">
+                                        <p class="fs-6 m-0">Feedat</p>
+                                        <p class="fs-6 lead m-0">Secret Message Sharing App</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-4">
+                                <a href="https://atmatag.zulkiflizin.com/" target="_blank" class="btn btn-light border rounded-9 shadow w-100 text-unset">
+                                    <img src="https://zulkiflizin.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fa7d042fb-9934-44dc-8f0e-65ba51618f8d%2Fimages%2Fb2e058b6-be1c-4c83-9a50-0981319b57d6.png&w=1920&q=80"
+                                    class="img-fluid img-work border rounded-9" alt="atmatag">
+
+                                    <div class="my-3">
+                                        <p class="fs-6 m-0">Atmatag</p>
+                                        <p class="fs-6 lead m-0">Get Lost Items Back To You</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-5">
+                        <p class="fw-semibold fs-5 text-black">Other Noteworthy Projects 📢</p>
+
+                        <div class="row">
+                            <div class="col-12 col-lg-6 mb-4">
+                                <a href="https://github.com/adamity/coverletterhq" target="_blank" class="btn btn-light border rounded-9 shadow w-100 text-unset">
+                                    <img src="https://zulkiflizin.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fa7d042fb-9934-44dc-8f0e-65ba51618f8d%2Fimages%2F072e2a0b-2a9e-462a-8303-009c16e74287.png&w=1920&q=80"
+                                    class="img-fluid img-work border rounded-9" alt="coverletterhq">
+
+                                    <div class="my-3">
+                                        <p class="fs-6 m-0">CoverLetterHQ</p>
+                                        <p class="fs-6 lead m-0">AI Powered Cover Letter Generator</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-4">
+                                <a href="https://github.com/adamity/noted" target="_blank" class="btn btn-light border rounded-9 shadow w-100 text-unset">
+                                    <img src="https://zulkiflizin.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fa7d042fb-9934-44dc-8f0e-65ba51618f8d%2Fimages%2F01a692e0-1103-4de0-ae0e-aae8fe7a5ac7.png&w=1920&q=80"
+                                    class="img-fluid img-work border rounded-9" alt="noted">
+
+                                    <div class="my-3">
+                                        <p class="fs-6 m-0">Noted</p>
+                                        <p class="fs-6 lead m-0">Multithreaded Text Editor</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
