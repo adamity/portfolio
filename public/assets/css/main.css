@@ -1,0 +1,34 @@
+.img-logo {
+    width: 184px !important;
+    height: 184px !important;
+}
+
+.text-unset {
+    text-transform: unset !important;
+}
+
+/* Height 100px and Prevent from image wrapping */
+.img-work {
+    height: 150px !important;
+    width: 100% !important;
+    object-fit: cover;
+}
+
+/* Mobile */
+@media (max-width: 991px) {
+    .img-logo {
+        width: 120px !important;
+        height: 120px !important;
+    }
+}
+
+/* Large */
+@media (min-width: 992px) {
+    .fixed-lg-top {
+        position: fixed;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+        top: 0;
+    }
+}
