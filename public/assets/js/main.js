@@ -355,16 +355,16 @@ categorizedSkillSet.forEach((category, index) => {
         let badgeOpacity = "";
         switch (skill.usage) {
             case 1:
-                badgeOpacity = "bg-opacity-10";
+                badgeOpacity = "bg-governor-bay-1";
                 break;
             case 2:
-                badgeOpacity = "bg-opacity-50";
+                badgeOpacity = "bg-governor-bay-2";
                 break;
             case 3:
-                badgeOpacity = "bg-opacity-100";
+                badgeOpacity = "bg-governor-bay-3";
                 break;
         }
-        tempSkillSetHTML += `<p class="text-dark small border border-2 border-dark rounded-pill px-4 me-2 mb-2 bg-info ${badgeOpacity}">${skill.name}</p>`;
+        tempSkillSetHTML += `<p class="text-white small border rounded-pill px-4 me-2 mb-2 ${badgeOpacity}">${skill.name}</p>`;
     });
 });
 skillSetContainer.innerHTML += tempSkillSetHTML;
