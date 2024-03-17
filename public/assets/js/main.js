@@ -355,13 +355,13 @@ categorizedSkillSet.forEach((category, index) => {
         let badgeOpacity = "";
         switch (skill.usage) {
             case 1:
-                badgeOpacity = "bg-governor-bay-1";
+                badgeOpacity = "bg-gradient-1";
                 break;
             case 2:
-                badgeOpacity = "bg-governor-bay-2";
+                badgeOpacity = "bg-gradient-2";
                 break;
             case 3:
-                badgeOpacity = "bg-governor-bay-3";
+                badgeOpacity = "bg-gradient-3";
                 break;
         }
         tempSkillSetHTML += `<p class="text-white small border rounded-pill px-4 me-2 mb-2 ${badgeOpacity}">${skill.name}</p>`;

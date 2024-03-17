@@ -26,6 +26,39 @@
     background-color: #2A32B199 !important;
 }
 
+.bg-gradient-3 {
+    /* background: rgb(42,50,177);
+    background: linear-gradient(90deg, rgba(42,50,177,1) 0%, rgba(28,92,185,1) 35%, rgba(19,136,205,1) 100%); */
+
+    /* background: rgb(42,50,177);
+    background: linear-gradient(90deg, rgba(42,50,177,1) 0%, rgba(28,92,185,1) 35%); */
+
+    background: rgb(42,50,177);
+    background: linear-gradient(45deg, rgba(42,50,177,1) 0%, rgba(28,92,185,1) 80%);
+}
+
+.bg-gradient-2 {
+    /* background: rgb(42,50,177);
+    background: linear-gradient(90deg, rgba(42,50,177,0.8) 0%, rgba(28,92,185,0.8) 35%, rgba(19,136,205,0.8) 100%); */
+
+    /* background: rgb(42,50,177);
+    background: linear-gradient(90deg, rgba(42,50,177,0.8) 0%, rgba(28,92,185,0.8) 35%); */
+
+    background: rgb(42,50,177);
+    background: linear-gradient(45deg, rgba(42,50,177,0.7) 0%, rgba(28,92,185,0.7) 80%);
+}
+
+.bg-gradient-1 {
+    /* background: rgb(42,50,177);
+    background: linear-gradient(90deg, rgba(42,50,177,0.6) 0%, rgba(28,92,185,0.6) 35%, rgba(19,136,205,0.6) 100%); */
+
+    /* background: rgb(42,50,177);
+    background: linear-gradient(90deg, rgba(42,50,177,0.6) 0%, rgba(28,92,185,0.6) 35%); */
+
+    background: rgb(42,50,177);
+    background: linear-gradient(45deg, rgba(42,50,177,0.4) 0%, rgba(28,92,185,0.4) 80%);
+}
+
 /* Mobile */
 @media (max-width: 991px) {
     .img-logo {
