@@ -267,63 +267,97 @@ const projectsShowcase = [
     {
         title: "Nomoresurf",
         description: "Productivity Website Blocker",
-        image: "./public/images/nomoresurf_thumbnail.png",
+        image: "https://placehold.co/1200x627",
         link: "https://nomoresurf.com/",
-        priority: 1
+        priority: 1,
+        cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
     },
     {
         title: "Skillsorder",
         description: "Skills Based Recruitment Platform",
-        image: "./public/images/skillsorder_thumbnail.png",
+        image: "https://placehold.co/1200x627",
         link: "https://skillsorder.com/",
-        priority: 1
-    },
-    {
-        title: "Atmaya",
-        description: "GPT-3 Powered Telegram Chatbot",
-        image: "./public/images/atmaya_thumbnail.png",
-        link: "https://t.me/AtmayaBot",
-        priority: 1
+        priority: 1,
+        cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
     },
     {
         title: "Tinyus",
         description: "URL Shortener Service App",
-        image: "./public/images/tinyus_thumbnail.png",
-        link: "https://tinyus.zulkiflizin.com/",
-        priority: 1
-    },
-    {
-        title: "Feedat",
-        description: "Secret Message Sharing App",
-        image: "./public/images/feedat_thumbnail.png",
-        link: "https://feedat.zulkiflizin.com/",
-        priority: 1
+        image: "https://placehold.co/1200x627",
+        link: "https://tinyus.microtion.com/",
+        priority: 1,
+        cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
     },
     {
         title: "Atmatag",
         description: "Get Lost Items Back To You",
-        image: "./public/images/atmatag_thumbnail.png",
+        image: "https://placehold.co/1200x627",
         link: "https://atmatag.zulkiflizin.com/",
-        priority: 1
+        priority: 1,
+        cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
     },
     {
-        title: "CoverLetterHQ",
-        description: "AI Powered Cover Letter Generator",
-        image: "./public/images/coverletterhq_thumbnail.png",
-        link: "https://github.com/adamity/coverletterhq",
-        priority: 2
+        title: "Pinguyin",
+        description: "Minimalist Pinyin Writing Zone",
+        image: "https://placehold.co/1200x627",
+        link: "https://pinguyin.microtion.com/",
+        priority: 1,
+        cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
+    },
+    {
+        title: "Raphael (Demo)",
+        description: "AI Customer Service Chatbot",
+        image: "https://placehold.co/1200x627",
+        link: "https://t.me/AtmayaBot",
+        priority: 1,
+        cta: "Chat with Raphael <i class='bi bi-arrow-up-right'></i>"
+    },
+    {
+        title: "Feedat",
+        description: "Secret Message Sharing App",
+        image: "https://placehold.co/1200x627",
+        link: "https://feedat.zulkiflizin.com/",
+        priority: 1,
+        cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
+    },
+
+    {
+        title: "BLODOS",
+        description: "Blood Donation Management System",
+        image: "https://placehold.co/1200x627",
+        link: "https://github.com/adamity/blodos",
+        priority: 2,
+        cta: "View on GitHub <i class='bi bi-arrow-up-right'></i>"
     },
     {
         title: "Noted",
         description: "Multithreaded Text Editor",
-        image: "./public/images/noted_thumbnail.png",
+        image: "https://placehold.co/1200x627",
         link: "https://github.com/adamity/noted",
-        priority: 2
+        priority: 2,
+        cta: "View on GitHub <i class='bi bi-arrow-up-right'></i>"
+    },
+    {
+        title: "CoverLetterHQ",
+        description: "AI Powered Cover Letter Generator",
+        image: "https://placehold.co/1200x627",
+        link: "https://github.com/adamity/coverletterhq",
+        priority: 2,
+        cta: "View on GitHub <i class='bi bi-arrow-up-right'></i>"
+    },
+    {
+        title: "Financial Budget OS",
+        description: "Simplify Budgeting & Stay On Track",
+        image: "https://placehold.co/1200x627",
+        link: "https://consistentcat.gumroad.com/l/financial-budget-os",
+        priority: 3,
+        cta: "Get Notion Template <i class='bi bi-arrow-up-right'></i>"
     }
 ];
 
 const highlightProjectContainer = document.querySelector('#js-highlight-project');
 const otherProjectContainer = document.querySelector('#js-other-project');
+const notionTemplateContainer = document.querySelector('#js-notion-template');
 
 const skillSetContainer = document.querySelector('#js-skill-set');
 const btnSocial = document.querySelectorAll('.js-btn-social');
@@ -332,20 +366,25 @@ let tempProjectHTML = "";
 let tempSkillSetHTML = "";
 
 projectsShowcase.forEach(project => {
-    tempProjectHTML = `<div class="col-12 col-lg-6 mb-4">
-        <a href="${project.link}" target="_blank" class="btn btn-light border rounded-9 shadow w-100 text-unset">
-            <img src="${project.image}" class="img-fluid img-work border rounded-9" alt="${project.title}">
-            <div class="my-3">
+    tempProjectHTML = `<div class="col-12 col-md-6 col-xl-4 mb-4">
+        <div class="card shadow h-100">
+            <img src="${project.image}" class="card-img-top" alt="${project.title}">
+            <div class="card-body text-center">
                 <p class="fs-6 m-0">${project.title}</p>
                 <p class="fs-6 lead m-0">${project.description}</p>
             </div>
-        </a>
+            <div class="card-footer p-0">
+                <a href="${project.link}" target="_blank" class="btn btn-primary rounded-0 rounded-bottom shadow-none w-100">${project.cta}</a>
+            </div>
+        </div>
     </div>`;
 
     if (project.priority === 1) {
         highlightProjectContainer.innerHTML += tempProjectHTML;
     } else if (project.priority === 2) {
         otherProjectContainer.innerHTML += tempProjectHTML;
+    } else if (project.priority === 3) {
+        notionTemplateContainer.innerHTML += tempProjectHTML;
     }
 });
 
