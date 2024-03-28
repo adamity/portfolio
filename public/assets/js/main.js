@@ -267,7 +267,7 @@ const projectsShowcase = [
     {
         title: "Nomoresurf",
         description: "Productivity Website Blocker",
-        image: "https://placehold.co/1200x627",
+        image: "./public/images/thumbnail/nomoresurf.png",
         link: "https://nomoresurf.com/",
         priority: 1,
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
@@ -275,7 +275,7 @@ const projectsShowcase = [
     {
         title: "Skillsorder",
         description: "Skills Based Recruitment Platform",
-        image: "https://placehold.co/1200x627",
+        image: "./public/images/thumbnail/skillsorder.png",
         link: "https://skillsorder.com/",
         priority: 1,
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
@@ -283,7 +283,7 @@ const projectsShowcase = [
     {
         title: "Tinyus",
         description: "URL Shortener Service App",
-        image: "https://placehold.co/1200x627",
+        image: "./public/images/thumbnail/tinyus.png",
         link: "https://tinyus.microtion.com/",
         priority: 1,
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
@@ -291,7 +291,7 @@ const projectsShowcase = [
     {
         title: "Atmatag",
         description: "Get Lost Items Back To You",
-        image: "https://placehold.co/1200x627",
+        image: "./public/images/thumbnail/atmatag.png",
         link: "https://atmatag.zulkiflizin.com/",
         priority: 1,
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
@@ -299,7 +299,7 @@ const projectsShowcase = [
     {
         title: "Pinguyin",
         description: "Minimalist Pinyin Writing Zone",
-        image: "https://placehold.co/1200x627",
+        image: "./public/images/thumbnail/pinguyin.png",
         link: "https://pinguyin.microtion.com/",
         priority: 1,
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
@@ -307,7 +307,7 @@ const projectsShowcase = [
     {
         title: "Raphael (Demo)",
         description: "AI Customer Service Chatbot",
-        image: "https://placehold.co/1200x627",
+        image: "./public/images/thumbnail/raphael.png",
         link: "https://t.me/AtmayaBot",
         priority: 1,
         cta: "Chat with Raphael <i class='bi bi-arrow-up-right'></i>"
@@ -315,7 +315,7 @@ const projectsShowcase = [
     {
         title: "Feedat",
         description: "Secret Message Sharing App",
-        image: "https://placehold.co/1200x627",
+        image: "./public/images/thumbnail/feedat.png",
         link: "https://feedat.zulkiflizin.com/",
         priority: 1,
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
@@ -324,7 +324,7 @@ const projectsShowcase = [
     {
         title: "BLODOS",
         description: "Blood Donation Management System",
-        image: "https://placehold.co/1200x627",
+        image: "./public/images/thumbnail/blodos.png",
         link: "https://github.com/adamity/blodos",
         priority: 2,
         cta: "View on GitHub <i class='bi bi-arrow-up-right'></i>"
@@ -332,7 +332,7 @@ const projectsShowcase = [
     {
         title: "Noted",
         description: "Multithreaded Text Editor",
-        image: "https://placehold.co/1200x627",
+        image: "./public/images/thumbnail/noted.png",
         link: "https://github.com/adamity/noted",
         priority: 2,
         cta: "View on GitHub <i class='bi bi-arrow-up-right'></i>"
@@ -340,15 +340,15 @@ const projectsShowcase = [
     {
         title: "CoverLetterHQ",
         description: "AI Powered Cover Letter Generator",
-        image: "https://placehold.co/1200x627",
+        image: "./public/images/thumbnail/coverletterhq.png",
         link: "https://github.com/adamity/coverletterhq",
         priority: 2,
         cta: "View on GitHub <i class='bi bi-arrow-up-right'></i>"
     },
     {
         title: "Financial Budget OS",
-        description: "Simplify Budgeting & Stay On Track",
-        image: "https://placehold.co/1200x627",
+        description: "The Ultimate Financial Budget OS",
+        image: "./public/images/thumbnail/financial.png",
         link: "https://consistentcat.gumroad.com/l/financial-budget-os",
         priority: 3,
         cta: "Get Notion Template <i class='bi bi-arrow-up-right'></i>"
@@ -367,8 +367,8 @@ let tempSkillSetHTML = "";
 
 projectsShowcase.forEach(project => {
     tempProjectHTML = `<div class="col-12 col-md-6 col-xl-4 mb-4">
-        <div class="card shadow h-100">
-            <img src="${project.image}" class="card-img-top" alt="${project.title}">
+        <div class="card shadow h-100 border">
+            <img src="${project.image}" class="card-img-top border-bottom" alt="${project.title}">
             <div class="card-body text-center">
                 <p class="fs-6 m-0">${project.title}</p>
                 <p class="fs-6 lead m-0">${project.description}</p>
