@@ -70,7 +70,7 @@ const categorizedSkillSet = [
             },
             {
                 name: "jQuery",
-                usage: 2
+                usage: 3
             },
             {
                 name: "TypeScript",
@@ -265,6 +265,14 @@ const categorizedSkillSet = [
 
 const projectsShowcase = [
     {
+        title: "Twiport Namecard",
+        description: "NFC Digital Business Card",
+        image: "./public/images/thumbnail/twiport-namecard.png",
+        link: "https://n.twiport.com/",
+        priority: 1,
+        cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
+    },
+    {
         title: "Nomoresurf",
         description: "Productivity Website Blocker",
         image: "./public/images/thumbnail/nomoresurf.png",
@@ -273,10 +281,10 @@ const projectsShowcase = [
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
     },
     {
-        title: "Skillsorder",
-        description: "Skills Based Recruitment Platform",
-        image: "./public/images/thumbnail/skillsorder.png",
-        link: "https://skillsorder.com/",
+        title: "Atmatag",
+        description: "Get Lost Items Back To You",
+        image: "./public/images/thumbnail/atmatag.png",
+        link: "https://atmatag.zulkiflizin.com/",
         priority: 1,
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
     },
@@ -285,14 +293,6 @@ const projectsShowcase = [
         description: "URL Shortener Service App",
         image: "./public/images/thumbnail/tinyus.png",
         link: "https://tinyus.microtion.com/",
-        priority: 1,
-        cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
-    },
-    {
-        title: "Atmatag",
-        description: "Get Lost Items Back To You",
-        image: "./public/images/thumbnail/atmatag.png",
-        link: "https://atmatag.zulkiflizin.com/",
         priority: 1,
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
     },
@@ -326,6 +326,22 @@ const projectsShowcase = [
         description: "Blood Donation Management System",
         image: "./public/images/thumbnail/blodos.png",
         link: "https://github.com/adamity/blodos",
+        priority: 2,
+        cta: "View on GitHub <i class='bi bi-arrow-up-right'></i>"
+    },
+    {
+        title: "Employee Burnout Prediction",
+        description: "Predicts Employee Burnout Using Machine Learning",
+        image: "./public/images/thumbnail/employee-burnout-prediction.png",
+        link: "https://github.com/adamity/CSC649_Employee-Burnout-Prediction",
+        priority: 2,
+        cta: "View on GitHub <i class='bi bi-arrow-up-right'></i>"
+    },
+    {
+        title: "Loan Approval Classification",
+        description: "Classifies Loan Applications Using Machine Learning",
+        image: "./public/images/thumbnail/loan-approval-classification.png",
+        link: "https://github.com/adamity/CSC649_Loan-Approval-Classification",
         priority: 2,
         cta: "View on GitHub <i class='bi bi-arrow-up-right'></i>"
     },
