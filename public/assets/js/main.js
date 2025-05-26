@@ -275,8 +275,8 @@ const projectsShowcase = [
     {
         title: "Nomoresurf",
         description: "Productivity Website Blocker",
-        image: "./public/images/thumbnail/nomoresurf.png",
-        link: "https://nomoresurf.com/",
+        image: "./public/images/thumbnail/nomoresurf-2.png",
+        link: "https://nomoresurf.microtion.com/",
         priority: 1,
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
     },
@@ -284,7 +284,7 @@ const projectsShowcase = [
         title: "Atmatag",
         description: "Get Lost Items Back To You",
         image: "./public/images/thumbnail/atmatag.png",
-        link: "https://atmatag.zulkiflizin.com/",
+        link: "https://atmatag.microtion.com/",
         priority: 1,
         cta: "Visit Website <i class='bi bi-arrow-up-right'></i>"
     },
